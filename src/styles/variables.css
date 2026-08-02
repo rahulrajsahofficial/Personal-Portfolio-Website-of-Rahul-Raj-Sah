@@ -1,0 +1,37 @@
+:root{
+
+  /* COLORS */
+  --bg-primary:#0B1220;
+  --bg-secondary:#111827;
+  --bg-card:rgba(255,255,255,.04);
+
+  --accent:#D4AF37;
+  --accent-light:#F4D35E;
+
+  --text-primary:#F8FAFC;
+  --text-secondary:#CBD5E1;
+
+  --border:rgba(212,175,55,.20);
+
+  /* TYPOGRAPHY */
+  --font-heading:"Playfair Display",serif;
+  --font-body:"Inter",sans-serif;
+
+  --hero-name:68px;
+  --hero-title:28px;
+  --section-title:46px;
+  --card-title:24px;
+  --body:18px;
+  --small:15px;
+
+  /* SPACING */
+  --section-padding:120px;
+  --container-width:1280px;
+
+  /* EFFECTS */
+  --radius:18px;
+  --shadow:0 20px 50px rgba(0,0,0,.35);
+
+  --transition:.35s ease;
+
+}

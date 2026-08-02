@@ -1,0 +1,290 @@
+/* =====================================================
+   BUSINESS PROJECTS
+===================================================== */
+
+.business-projects{
+    padding:120px 6%;
+    background:#0B0B0B;
+    color:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
+
+/* =====================================================
+   BACKGROUND EFFECT
+===================================================== */
+
+.business-projects::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    top:-250px;
+    right:-250px;
+    background:radial-gradient(circle,
+        rgba(201,162,39,.08),
+        transparent 70%);
+    pointer-events:none;
+}
+
+.business-projects::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    bottom:-200px;
+    left:-200px;
+    background:radial-gradient(circle,
+        rgba(255,255,255,.03),
+        transparent 70%);
+    pointer-events:none;
+}
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.projects-header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 80px;
+    position:relative;
+    z-index:2;
+}
+
+.section-tag{
+    display:inline-block;
+    color:#C9A227;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.projects-header h2{
+    font-family:"Playfair Display",serif;
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.heading-line{
+    width:90px;
+    height:4px;
+    background:#C9A227;
+    border-radius:30px;
+    margin:25px auto;
+}
+
+.section-description{
+    color:#d7d7d7;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.projects-grid{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    position:relative;
+    z-index:2;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.project-card{
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(201,162,39,.18);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s ease;
+
+    backdrop-filter:blur(15px);
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C9A227;
+
+    box-shadow:
+        0 20px 45px rgba(201,162,39,.18),
+        0 0 0 1px rgba(201,162,39,.12);
+
+}
+
+.project-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.project-category{
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(201,162,39,.12);
+
+    border:1px solid rgba(201,162,39,.25);
+
+    color:#C9A227;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.project-year{
+
+    color:#bbbbbb;
+
+    font-size:15px;
+
+}
+
+.project-card h3{
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    line-height:1.4;
+
+}
+
+.project-card p{
+
+    color:#d7d7d7;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+    margin-bottom:25px;
+
+}
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.project-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.project-skills span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(201,162,39,.30);
+
+    color:#C9A227;
+
+    font-size:14px;
+
+    transition:.3s ease;
+
+}
+
+.project-skills span:hover{
+
+    background:#C9A227;
+
+    color:#111111;
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.business-projects{
+
+padding:90px 6%;
+
+}
+
+.projects-header h2{
+
+font-size:38px;
+
+}
+
+.section-description{
+
+font-size:16px;
+
+}
+
+.project-card{
+
+padding:28px;
+
+}
+
+.project-card h3{
+
+font-size:24px;
+
+}
+
+.project-top{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+}

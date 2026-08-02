@@ -1,0 +1,234 @@
+/* =====================================================
+   CORE COMPETENCIES
+===================================================== */
+
+.core-competencies{
+    padding:120px 6%;
+    background:#0B0B0B;
+    color:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Background Glow */
+
+.core-competencies::before{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    top:-250px;
+    left:-200px;
+    background:radial-gradient(circle,
+        rgba(201,162,39,.10),
+        transparent 70%);
+    pointer-events:none;
+}
+
+.core-competencies::after{
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    right:-250px;
+    bottom:-300px;
+    background:radial-gradient(circle,
+        rgba(255,255,255,.03),
+        transparent 70%);
+    pointer-events:none;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 80px;
+}
+
+.section-tag{
+    display:inline-block;
+    color:#C9A227;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    font-family:"Playfair Display",serif;
+    font-size:52px;
+    color:#ffffff;
+    margin-bottom:18px;
+}
+
+.heading-line{
+    width:90px;
+    height:4px;
+    background:#C9A227;
+    margin:25px auto;
+    border-radius:30px;
+}
+
+.section-description{
+    color:#d7d7d7;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.competency-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:30px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.competency-card{
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(201,162,39,.18);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:.35s ease;
+
+    backdrop-filter:blur(16px);
+}
+
+.competency-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C9A227;
+
+    box-shadow:
+    0 20px 45px rgba(201,162,39,.18),
+    0 0 0 1px rgba(201,162,39,.15);
+
+}
+
+.competency-icon{
+
+    width:72px;
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+
+    border-radius:18px;
+
+    background:rgba(201,162,39,.12);
+
+    margin-bottom:24px;
+
+}
+
+.competency-card h3{
+
+    font-size:24px;
+
+    color:#C9A227;
+
+    margin-bottom:16px;
+
+    line-height:1.4;
+
+}
+
+.competency-card p{
+
+    color:#d7d7d7;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+.competency-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.core-competencies{
+
+padding:90px 6%;
+
+}
+
+.section-header h2{
+
+font-size:38px;
+
+}
+
+.section-description{
+
+font-size:16px;
+
+}
+
+.competency-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.competency-card{
+
+padding:28px;
+
+}
+
+.competency-icon{
+
+width:64px;
+height:64px;
+
+font-size:30px;
+
+}
+
+.competency-card h3{
+
+font-size:22px;
+
+}
+
+}
