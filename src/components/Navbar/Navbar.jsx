@@ -7,20 +7,18 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Home", href: "#home" },
-    { name: "Education", href: "#education" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
-    { name: "About Me", href: "#about" },
-  ];
-
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Education", href: "#education" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
   return (
     <header className="navbar">
       <div className="navbar-container">
 
-        {/* Logo */}
         <a href="#home" className="brand">
           <img
             src={logo}
@@ -33,7 +31,6 @@ function Navbar() {
           </div>
         </a>
 
-        {/* Navigation */}
         <nav className={open ? "nav open" : "nav"}>
           {links.map((link) => (
             <a
@@ -46,7 +43,6 @@ function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile Menu */}
         <button
           className="menu-btn"
           onClick={() => setOpen(!open)}
