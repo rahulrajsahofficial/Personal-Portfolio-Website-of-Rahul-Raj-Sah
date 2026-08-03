@@ -9,12 +9,9 @@
     width:100%;
     z-index:999;
 
-    background:rgba(11,18,32,.80);
+    background:rgba(11,18,32,.85);
     backdrop-filter:blur(18px);
-
     border-bottom:1px solid rgba(212,175,55,.15);
-
-    transition:.35s ease;
 }
 
 .navbar-container{
@@ -26,7 +23,7 @@
     justify-content:space-between;
     align-items:center;
 
-    padding:16px 0;
+    padding:18px 0;
 
 }
 
@@ -38,7 +35,7 @@
 
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:18px;
 
     text-decoration:none;
 
@@ -46,18 +43,10 @@
 
 .brand-logo{
 
-    width:68px;
-    height:68px;
+    width:78px;
+    height:78px;
 
     object-fit:contain;
-
-    transition:.35s ease;
-
-}
-
-.brand:hover .brand-logo{
-
-    transform:rotate(-4deg) scale(1.05);
 
 }
 
@@ -65,9 +54,9 @@
 
     margin:0;
 
-    color:#ffffff;
+    color:white;
 
-    font-size:1.45rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -75,41 +64,29 @@
 
 }
 
-.brand p{
-
-    margin-top:4px;
-
-    color:#D4AF37;
-
-    font-size:.82rem;
-
-    letter-spacing:.8px;
-
-}
-
 /* ===============================
-   NAV LINKS
+   NAVIGATION
 ================================ */
 
 .nav{
 
     display:flex;
     align-items:center;
-    gap:32px;
+    gap:45px;
 
 }
 
 .nav a{
 
-    color:#E5E7EB;
+    color:white;
 
     text-decoration:none;
 
-    font-size:.98rem;
+    font-size:1.08rem;
 
     font-weight:500;
 
-    transition:.3s ease;
+    transition:.3s;
 
     position:relative;
 
@@ -122,7 +99,7 @@
     position:absolute;
 
     left:0;
-    bottom:-6px;
+    bottom:-8px;
 
     width:0;
 
@@ -130,7 +107,7 @@
 
     background:#D4AF37;
 
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
@@ -147,53 +124,7 @@
 }
 
 /* ===============================
-   RESUME BUTTON
-================================ */
-
-.resume-btn{
-
-    display:flex !important;
-
-    align-items:center;
-
-    gap:10px;
-
-    background:#D4AF37;
-
-    color:#111827 !important;
-
-    padding:13px 22px;
-
-    border-radius:50px;
-
-    font-weight:700 !important;
-
-    transition:.35s ease;
-
-    box-shadow:0 10px 30px rgba(212,175,55,.25);
-
-}
-
-.resume-btn:hover{
-
-    background:#F4D35E;
-
-    color:#111827 !important;
-
-    transform:translateY(-3px);
-
-    box-shadow:0 18px 40px rgba(212,175,55,.35);
-
-}
-
-.resume-btn::after{
-
-    display:none;
-
-}
-
-/* ===============================
-   MENU BUTTON
+   MOBILE MENU
 ================================ */
 
 .menu-btn{
@@ -204,9 +135,9 @@
 
     border:none;
 
-    cursor:pointer;
+    color:white;
 
-    color:#ffffff;
+    cursor:pointer;
 
 }
 
@@ -220,27 +151,27 @@
 
     position:fixed;
 
-    top:92px;
-
     right:-100%;
 
-    width:320px;
+    top:90px;
 
-    height:calc(100vh - 92px);
+    width:300px;
+
+    height:calc(100vh - 90px);
+
+    background:#111827;
+
+    display:flex;
 
     flex-direction:column;
 
     align-items:flex-start;
 
-    padding:45px 30px;
+    gap:28px;
 
-    gap:25px;
+    padding:40px;
 
-    background:#111827;
-
-    transition:.35s ease;
-
-    box-shadow:-10px 0 40px rgba(0,0,0,.35);
+    transition:.35s;
 
 }
 
@@ -256,71 +187,27 @@
 
 }
 
-.resume-btn{
-
-    width:100%;
-
-    justify-content:center;
-
-}
-
 }
 
 @media(max-width:768px){
 
 .brand-logo{
 
-    width:58px;
+    width:60px;
 
-    height:58px;
+    height:60px;
 
 }
 
 .brand h2{
 
-    font-size:1.15rem;
-
-}
-
-.brand p{
-
-    display:none;
+    font-size:1.4rem;
 
 }
 
 .nav{
 
     width:100%;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.navbar-container{
-
-    padding:12px 0;
-
-}
-
-.brand{
-
-    gap:10px;
-
-}
-
-.brand-logo{
-
-    width:50px;
-
-    height:50px;
-
-}
-
-.brand h2{
-
-    font-size:1rem;
 
 }
 
