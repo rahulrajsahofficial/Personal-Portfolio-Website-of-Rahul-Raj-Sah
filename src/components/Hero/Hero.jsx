@@ -9,8 +9,7 @@ import {
   ClipboardList,
 } from "lucide-react";
 
-import heroImage from "../../assets/hero2.jpg";
-
+import heroImage from "../../assets/images/hero2.jpeg";
 export default function Hero() {
   return (
     <section id="home" className="hero">
