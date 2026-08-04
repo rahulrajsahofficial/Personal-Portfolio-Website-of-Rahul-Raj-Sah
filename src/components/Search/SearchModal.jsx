@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./SearchModal.css";
 import { Search, X } from "lucide-react";
-import { searchData } from "./searchData";
+import { searchData } from "./SearchData";
 
 export default function SearchModal({ isOpen, onClose }) {
   const [query, setQuery] = useState("");
