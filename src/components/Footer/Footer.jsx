@@ -1,5 +1,18 @@
 import "./Footer.css";
 import logo from "../../assets/logo/final-logo.png";
+import resume from "../../assets/resume/Rahul_Raj_Sah_Resume.pdf";
+
+import {
+  FaEnvelope,
+  FaWhatsapp,
+  FaLinkedin,
+  FaInstagram,
+  FaFacebookF,
+  FaXTwitter,
+  FaLocationDot,
+  FaDownload,
+  FaArrowUp,
+} from "react-icons/fa6";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -8,6 +21,8 @@ function Footer() {
     <footer className="footer">
 
       <div className="footer-container">
+
+        {/* ================= LEFT ================= */}
 
         <div className="footer-brand">
 
@@ -20,13 +35,25 @@ function Footer() {
           </p>
 
           <p className="footer-description">
-            Business Administration Graduate passionate about
-            Finance, Management, Operations, Leadership and
-            Business Development. Dedicated to creating value,
-            solving business challenges and driving sustainable growth.
+            Business Administration Graduate passionate about Business
+            Administration, Finance, Management, Operations, Leadership,
+            Human Resources and Business Development. Dedicated to creating
+            measurable value, solving business challenges and driving
+            sustainable organizational growth.
           </p>
 
+          <a
+            href={resume}
+            download
+            className="footer-resume-btn"
+          >
+            <FaDownload />
+            Download Resume
+          </a>
+
         </div>
+
+        {/* ================= CENTER ================= */}
 
         <div className="footer-links">
 
@@ -38,13 +65,13 @@ function Footer() {
 
             <li><a href="#about">About</a></li>
 
-            <li><a href="#journey">Journey</a></li>
-
             <li><a href="#education">Education</a></li>
 
-            <li><a href="#competencies">Competencies</a></li>
+            <li><a href="#experience">Experience</a></li>
 
             <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#skills">Skills</a></li>
 
             <li><a href="#contact">Contact</a></li>
 
@@ -52,21 +79,76 @@ function Footer() {
 
         </div>
 
+        {/* ================= RIGHT ================= */}
+
         <div className="footer-contact">
 
-          <h3>Contact</h3>
+          <h3>Connect With Me</h3>
 
-          <p>📧 rahulrajsah32@gmail.com</p>
+          <a
+            href="mailto:rahulrajsah32@gmail.com"
+            className="footer-contact-item"
+          >
+            <FaEnvelope />
+            <span>rahulrajsah32@gmail.com</span>
+          </a>
 
-          <p>📍 United Arab Emirates</p>
+          <a
+            href="https://wa.me/9779819755300"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-contact-item"
+          >
+            <FaWhatsapp />
+            <span>+977 9819755300</span>
+          </a>
 
-          <p>🎓 Jaipur National University</p>
+          <div className="footer-contact-item">
+            <FaLocationDot />
+            <span>Kathmandu, Nepal</span>
+          </div>
 
-          <p>💼 Business Administration Graduate</p>
+          <div className="footer-socials">
+
+            <a
+              href="https://www.instagram.com/rahulrajsah1998?igsh=NTQ3cGdxcWNlcWh2"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1D7wuocRjH/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="#"
+              title="LinkedIn (Coming Soon)"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="#"
+              title="X (Coming Soon)"
+            >
+              <FaXTwitter />
+            </a>
+
+          </div>
 
         </div>
 
       </div>
+
+      {/* ================= BOTTOM ================= */}
 
       <div className="footer-bottom">
 
@@ -74,8 +156,16 @@ function Footer() {
           © {year} Rahul Raj Sah. All Rights Reserved.
         </p>
 
-        <a href="#home" className="back-to-top">
-          ↑ Back to Top
+        <p className="footer-credit">
+          Designed & Developed by <strong>Rahul Raj Sah</strong>
+        </p>
+
+        <a
+          href="#home"
+          className="back-to-top"
+        >
+          <FaArrowUp />
+          <span>Back to Top</span>
         </a>
 
       </div>
