@@ -21,7 +21,7 @@ function Contact() {
       <div className="contact-header">
         <span className="section-tag">CONTACT</span>
 
-        <h2>Let's Build Something Meaningful Together</h2>
+        <h2>Let's Create Something Exceptional Together</h2>
 
         <div className="heading-line"></div>
 
@@ -71,16 +71,22 @@ function Contact() {
           </div>
 
           <div className="contact-card">
-            <div className="contact-icon">
-              <FaLinkedin />
-            </div>
+  <div className="contact-icon">
+    <FaLinkedin />
+  </div>
 
-            <div>
-              <h3>LinkedIn</h3>
+  <div>
+    <h3>LinkedIn</h3>
 
-              <p>Coming Soon</p>
-            </div>
-          </div>
+    <a
+      href="https://www.linkedin.com/in/rahul-raj-sah-947b161bb"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Connect on LinkedIn
+    </a>
+  </div>
+</div>
 
           <div className="contact-card">
             <div className="contact-icon">
@@ -119,16 +125,22 @@ function Contact() {
           </div>
 
           <div className="contact-card">
-            <div className="contact-icon">
-              <FaXTwitter />
-            </div>
+  <div className="contact-icon">
+    <FaXTwitter />
+  </div>
 
-            <div>
-              <h3>X (Twitter)</h3>
+  <div>
+    <h3>X (Twitter)</h3>
 
-              <p>Coming Soon</p>
-            </div>
-          </div>
+    <a
+      href="https://x.com/RahulRajSah"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Follow on X
+    </a>
+  </div>
+</div>
 
           <div className="contact-card">
             <div className="contact-icon">
