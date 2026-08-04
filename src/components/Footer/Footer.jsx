@@ -1,6 +1,5 @@
 import "./Footer.css";
 import logo from "../../assets/logo/final-logo.png";
-import resume from "../../assets/resume/Rahul_Raj_Sah_Resume.pdf";
 
 import {
   FaEnvelope,
@@ -10,7 +9,6 @@ import {
   FaFacebookF,
   FaXTwitter,
   FaLocationDot,
-  FaDownload,
   FaArrowUp,
 } from "react-icons/fa6";
 
@@ -42,15 +40,6 @@ function Footer() {
             sustainable organizational growth.
           </p>
 
-          <a
-            href={resume}
-            download
-            className="footer-resume-btn"
-          >
-            <FaDownload />
-            Download Resume
-          </a>
-
         </div>
 
         {/* ================= CENTER ================= */}
@@ -62,17 +51,11 @@ function Footer() {
           <ul>
 
             <li><a href="#home">Home</a></li>
-
             <li><a href="#about">About</a></li>
-
             <li><a href="#education">Education</a></li>
-
             <li><a href="#experience">Experience</a></li>
-
             <li><a href="#projects">Projects</a></li>
-
             <li><a href="#skills">Skills</a></li>
-
             <li><a href="#contact">Contact</a></li>
 
           </ul>
@@ -160,10 +143,7 @@ function Footer() {
           Designed & Developed by <strong>Rahul Raj Sah</strong>
         </p>
 
-        <a
-          href="#home"
-          className="back-to-top"
-        >
+        <a href="#home" className="back-to-top">
           <FaArrowUp />
           <span>Back to Top</span>
         </a>

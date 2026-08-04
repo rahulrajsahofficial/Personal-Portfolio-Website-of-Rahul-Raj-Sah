@@ -1,184 +1,198 @@
 import "./ProfessionalJourney.css";
-import { motion } from "framer-motion";
+import {
+  Briefcase,
+  TrendingUp,
+  Building2,
+  ShieldCheck,
+  Users,
+  Calculator,
+  ClipboardCheck,
+} from "lucide-react";
 
-export default function ProfessionalJourney() {
+const experiences = [
+  {
+    company: "We One Facilities Management LLC",
+    location: "Dubai, United Arab Emirates",
+    duration: "May 2023 – Jan 2026",
+    icon: <Building2 size={28} />,
+    positions: [
+      {
+        title: "Assistant Facility Manager",
+        badge: "Promoted",
+        description: [
+          "Promoted in recognition of consistent performance, leadership and operational excellence.",
+          "Coordinated day-to-day facility operations across client locations.",
+          "Managed staff deployment, scheduling and operational reporting.",
+          "Worked closely with management to improve workflow efficiency and service quality.",
+          "Handled client coordination, documentation and administrative responsibilities.",
+          "Supported business operations while maintaining compliance with company standards.",
+        ],
+      },
+      {
+        title: "Receptionist / Security Officer",
+        badge: "Joined",
+        description: [
+          "Joined MBR MORO HUB, Mohammed Bin Rashid Al Maktoum Solar Park as Receptionist / Security Officer.",
+          "Managed front desk operations and visitor management.",
+          "Maintained access control and security procedures.",
+          "Prepared reports and handled daily operational documentation.",
+          "Provided customer service while ensuring safety and professional communication.",
+        ],
+      },
+    ],
+  },
+
+  {
+    company: "Crystal Time Engineering Solution Pvt. Ltd.",
+    location: "Kathmandu, Nepal",
+    duration: "Sep 2020 – Oct 2022",
+    icon: <TrendingUp size={28} />,
+    positions: [
+      {
+        title: "Supervisor",
+        badge: "Promoted",
+        description: [
+          "Promoted from Sales Assistant based on performance and leadership.",
+          "Led daily sales operations and coordinated team activities.",
+          "Monitored targets and prepared sales reports.",
+          "Maintained client relationships and resolved customer issues.",
+          "Supported management in planning and execution of business operations.",
+        ],
+      },
+      {
+        title: "Sales Assistant",
+        badge: "Joined",
+        description: [
+          "Supported sales and customer service activities.",
+          "Prepared quotations and maintained client records.",
+          "Assisted in business development initiatives.",
+          "Handled inventory coordination and documentation.",
+        ],
+      },
+    ],
+  },
+
+  {
+    company: "Aakash Jyoti Construction Pvt. Ltd.",
+    location: "Nepal",
+    duration: "Dec 2019 – May 2020",
+    icon: <ClipboardCheck size={28} />,
+    positions: [
+      {
+        title: "Assistant Project Manager",
+        description: [
+          "Supported project planning and execution.",
+          "Prepared project documentation and reports.",
+          "Coordinated between management, contractors and project teams.",
+          "Assisted in project scheduling and resource planning.",
+        ],
+      },
+    ],
+  },
+
+  {
+    company: "Civil Action Security Pvt. Ltd.",
+    location: "Nepal",
+    duration: "Aug 2017 – Oct 2019",
+    icon: <Calculator size={28} />,
+    positions: [
+      {
+        title: "Accountant",
+        description: [
+          "Managed accounting records and financial documentation.",
+          "Prepared invoices, vouchers and payment records.",
+          "Performed bank reconciliation and bookkeeping.",
+          "Supported budgeting and financial reporting activities.",
+        ],
+      },
+    ],
+  },
+
+  {
+    company: "Election Commission Nepal",
+    location: "Nepal",
+    duration: "Apr 2017 – Jul 2017",
+    icon: <Users size={28} />,
+    positions: [
+      {
+        title: "Election Officer",
+        description: [
+          "Supported election operations and administrative activities.",
+          "Maintained official documentation and records.",
+          "Assisted citizens during the election process.",
+          "Worked with government officials to ensure smooth operations.",
+        ],
+      },
+    ],
+  },
+];
+
+function ProfessionalJourney() {
   return (
     <section className="professional-journey" id="experience">
-
       <div className="journey-header">
+        <span className="section-tag">PROFESSIONAL JOURNEY</span>
 
-        <span className="section-tag">
-          PROFESSIONAL JOURNEY
-        </span>
-
-        <h2>
-          Building Experience Through Growth
-        </h2>
+        <h2>Career Timeline</h2>
 
         <div className="heading-line"></div>
 
-        <p className="journey-description">
-          My professional journey has been shaped by continuous learning,
-          operational excellence, customer service and business administration.
-          Every experience has strengthened my ability to adapt, collaborate and
-          deliver meaningful results.
+        <p className="section-description">
+          My professional journey reflects continuous growth, leadership,
+          adaptability and commitment to delivering measurable results across
+          business administration, operations, customer service, finance and
+          project coordination.
         </p>
-
       </div>
 
-      <div className="journey-chapter">
-
-        <span className="chapter-number">
-          CHAPTER 01
-        </span>
-
-        <h3>
-          Professional Experience
-        </h3>
-
-        <p className="chapter-intro">
-          Working in operations and facility management has enabled me to
-          develop strong communication, leadership, administrative and
-          problem-solving abilities while serving diverse clients in a
-          professional environment.
-        </p>
-
-        <div className="career-timeline">
-
-          <motion.div
-            className="career-card"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: .6 }}
-            viewport={{ once: true }}
-          >
-
-            <h4>Receptionist / Security Officer</h4>
-
-            <span className="company">
-              We One Facilities Management LLC • United Arab Emirates
-            </span>
-
-            <ul>
-
-              <li>
-                Delivered professional front-desk and customer support services.
-              </li>
-
-              <li>
-                Coordinated visitor management and daily administrative
-                operations.
-              </li>
-
-              <li>
-                Maintained documentation, reporting and operational compliance.
-              </li>
-
-              <li>
-                Worked collaboratively with multicultural teams to ensure
-                excellent customer experience.
-              </li>
-
-              <li>
-                Demonstrated professionalism, integrity and effective
-                communication under pressure.
-              </li>
-
-            </ul>
-
-            <div className="business-value">
-
-              <strong>
-                Business Value Delivered
-              </strong>
-
-              <p>
-                Strengthened organizational efficiency through professional
-                administration, operational discipline, customer engagement and
-                continuous process improvement.
-              </p>
-
+      <div className="timeline">
+        {experiences.map((job, index) => (
+          <div className="timeline-item" key={index}>
+            <div className="timeline-dot">
+              {job.icon}
             </div>
 
-          </motion.div>
+            <div className="timeline-card">
 
-        </div>
+              <div className="timeline-company">
+                <h3>{job.company}</h3>
 
+                <span>{job.duration}</span>
+
+                <p>{job.location}</p>
+              </div>
+
+              {job.positions.map((position, idx) => (
+                <div className="position-block" key={idx}>
+                  <div className="position-header">
+
+                    <h4>{position.title}</h4>
+
+                    {position.badge && (
+                      <span className="promotion-badge">
+                        {position.badge}
+                      </span>
+                    )}
+
+                  </div>
+
+                  <ul>
+                    {position.description.map((point, i) => (
+                      <li key={i}>
+                        <ShieldCheck size={16} />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className="career-highlights">
-
-        <div className="journey-header">
-
-          <span className="section-tag">
-            PROFESSIONAL SNAPSHOT
-          </span>
-
-          <h2>
-            Areas of Expertise
-          </h2>
-
-          <div className="heading-line"></div>
-
-        </div>
-
-        <div className="highlights-grid">
-
-          <div className="highlight-card">
-
-            <div className="highlight-icon">📊</div>
-
-            <h4>Business Administration</h4>
-
-            <p>
-              Business operations, administration and organizational
-              coordination.
-            </p>
-
-          </div>
-
-          <div className="highlight-card">
-
-            <div className="highlight-icon">💼</div>
-
-            <h4>Operations Management</h4>
-
-            <p>
-              Daily operations, process optimization and customer experience.
-            </p>
-
-          </div>
-
-          <div className="highlight-card">
-
-            <div className="highlight-icon">📈</div>
-
-            <h4>Finance & Accounting</h4>
-
-            <p>
-              Financial awareness, accounting fundamentals and analytical
-              decision-making.
-            </p>
-
-          </div>
-
-          <div className="highlight-card">
-
-            <div className="highlight-icon">🤝</div>
-
-            <h4>Leadership & Teamwork</h4>
-
-            <p>
-              Collaboration, communication and continuous professional
-              development.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
     </section>
   );
 }
+
+export default ProfessionalJourney;

@@ -1,7 +1,5 @@
 import "./Contact.css";
 
-import resume from "../../assets/resume/Rahul_Raj_Sah_Resume.pdf";
-
 import {
   FaWhatsapp,
   FaLinkedin,
@@ -168,15 +166,6 @@ function Contact() {
               className="contact-btn"
             >
               Get In Touch
-            </a>
-
-            <a
-              href={resume}
-              download
-              className="contact-btn secondary"
-            >
-              <HiOutlineDocumentArrowDown />
-              Download Resume
             </a>
 
           </div>
