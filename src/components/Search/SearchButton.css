@@ -1,0 +1,156 @@
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.search-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 150px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid rgba(201,162,39,.20);
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.04);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    cursor: pointer;
+
+    transition: all .35s ease;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    gap: 8px;
+
+}
+
+/* ===================================== */
+
+.search-button:hover {
+
+    background: rgba(201,162,39,.12);
+
+    border-color: #C9A227;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 24px rgba(201,162,39,.18);
+
+}
+
+/* ===================================== */
+
+.search-button:active {
+
+    transform: scale(.97);
+
+}
+
+/* ===================================== */
+
+.search-button svg {
+
+    color: #C9A227;
+
+    flex-shrink: 0;
+
+}
+
+/* ===================================== */
+
+.search-button span {
+
+    flex: 1;
+
+    text-align: left;
+
+    font-size: .86rem;
+
+    font-weight: 500;
+
+    color: #F5F5F5;
+
+    white-space: nowrap;
+
+}
+
+/* ===================================== */
+
+.search-shortcut {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 42px;
+
+    height: 22px;
+
+    border-radius: 6px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.05);
+
+    color: #bdbdbd;
+
+    font-size: .62rem;
+
+    font-weight: 600;
+
+}
+
+/* ===================================== */
+
+@media (max-width:1200px){
+
+.search-button{
+
+width:135px;
+
+}
+
+}
+
+/* ===================================== */
+
+@media (max-width:1024px){
+
+.search-button{
+
+width:100%;
+
+height:46px;
+
+}
+
+.search-shortcut{
+
+display:none;
+
+}
+
+}
+
+/* ===================================== */
+
+@media (max-width:768px){
+
+.search-button{
+
+font-size:.9rem;
+
+}
+
+}

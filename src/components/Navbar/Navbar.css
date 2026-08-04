@@ -1,6 +1,6 @@
-/* ===============================
-   NAVBAR
-================================ */
+/* ==================================================
+   PREMIUM NAVBAR
+================================================== */
 
 .navbar{
     position:fixed;
@@ -9,7 +9,7 @@
     width:100%;
     z-index:999;
 
-    background:rgba(11,18,32,.80);
+    background:rgba(11,18,32,.82);
     backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(212,175,55,.15);
@@ -30,9 +30,9 @@
 
 }
 
-/* ===============================
+/* ==================================================
    BRAND
-================================ */
+================================================== */
 
 .brand{
 
@@ -51,13 +51,13 @@
 
     object-fit:contain;
 
-    transition:.35s ease;
+    transition:.35s;
 
 }
 
 .brand:hover .brand-logo{
 
-    transform:rotate(-4deg) scale(1.05);
+    transform:rotate(-5deg) scale(1.05);
 
 }
 
@@ -65,28 +65,28 @@
 
     margin:0;
 
-    color:#ffffff;
+    color:#fff;
 
-    font-size:2.3rem;
+    font-size:2.25rem;
 
     font-weight:800;
 
-    letter-spacing:.5px;
-
     line-height:1;
+
+    letter-spacing:.5px;
 
 }
 
-/* ===============================
-   NAV LINKS
-================================ */
+/* ==================================================
+   NAVIGATION
+================================================== */
 
 .nav{
 
     display:flex;
     align-items:center;
 
-    gap:34px;
+    gap:30px;
 
 }
 
@@ -100,9 +100,9 @@
 
     font-weight:500;
 
-    transition:.3s ease;
-
     position:relative;
+
+    transition:.3s;
 
 }
 
@@ -114,7 +114,7 @@
 
     left:0;
 
-    bottom:-6px;
+    bottom:-7px;
 
     width:0;
 
@@ -122,7 +122,7 @@
 
     background:#D4AF37;
 
-    transition:.3s ease;
+    transition:.3s;
 
 }
 
@@ -138,29 +138,109 @@
 
 }
 
-/* ===============================
+/* ==================================================
+   SEARCH BUTTON
+================================================== */
+
+.search-navbar-btn{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-left:10px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    color:#ffffff;
+
+    transition:.3s;
+
+}
+
+.search-navbar-btn:hover{
+
+    background:#D4AF37;
+
+    color:#111827;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(212,175,55,.22);
+
+}
+
+.search-navbar-btn svg{
+
+    flex-shrink:0;
+
+}
+
+.search-navbar-btn span{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+}
+
+.search-navbar-btn kbd{
+
+    padding:4px 8px;
+
+    border-radius:6px;
+
+    background:rgba(255,255,255,.08);
+
+    font-size:.72rem;
+
+    font-family:inherit;
+
+    color:#d1d5db;
+
+}
+
+.search-navbar-btn:hover kbd{
+
+    background:rgba(17,24,39,.15);
+
+    color:#111827;
+
+}
+
+/* ==================================================
    MENU BUTTON
-================================ */
+================================================== */
 
 .menu-btn{
 
     display:none;
 
+    border:none;
+
     background:none;
 
-    border:none;
+    color:#fff;
 
     cursor:pointer;
 
-    color:#ffffff;
-
 }
 
-/* ===============================
+/* ==================================================
    RESPONSIVE
-================================ */
+================================================== */
 
-@media(max-width:1024px){
+@media(max-width:1150px){
 
 .nav{
 
@@ -174,17 +254,19 @@
 
     height:calc(100vh - 90px);
 
+    background:#111827;
+
+    display:flex;
+
     flex-direction:column;
 
     align-items:flex-start;
 
-    padding:45px 30px;
+    gap:24px;
 
-    gap:25px;
+    padding:40px 30px;
 
-    background:#111827;
-
-    transition:.35s ease;
+    transition:.35s;
 
     box-shadow:-10px 0 40px rgba(0,0,0,.35);
 
@@ -202,6 +284,18 @@
 
 }
 
+.search-navbar-btn{
+
+    width:100%;
+
+    justify-content:space-between;
+
+    margin-top:12px;
+
+    margin-left:0;
+
+}
+
 }
 
 @media(max-width:768px){
@@ -216,13 +310,31 @@
 
 .brand h2{
 
-    font-size:1.7rem;
+    font-size:1.65rem;
 
 }
 
 .nav{
 
     width:100%;
+
+}
+
+.search-navbar-btn{
+
+    padding:12px 16px;
+
+}
+
+.search-navbar-btn span{
+
+    font-size:.9rem;
+
+}
+
+.search-navbar-btn kbd{
+
+    display:none;
 
 }
 
@@ -238,7 +350,7 @@
 
 .brand{
 
-    gap:10px;
+    gap:12px;
 
 }
 
